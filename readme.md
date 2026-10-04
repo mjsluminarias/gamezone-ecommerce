@@ -1,0 +1,98 @@
+<p align="center">
+  <img src="misc/gamezone_logo.png" alt="GameZone Logo">
+</p>
+
+# <p align="center">Client Background</p>
+
+
+
+GameZone desc
+
+GameZone book
+
+GameZone additional details
+
+
+
+## Northstar Metrics
+- [Sales trends](#sales-trends) - focusing on key metrics of sales revenue, number of orders placed, and average order value
+- [Product performance](#product-performance)  - Analyzing different product lines, market impact, and refund rates to inform strategic product decisions
+- [Platform](#) - 
+- [Marketing Channel](#) - 
+
+#
+
+# <p align="center">Executive Summary</p>
+<h2 style="border-bottom: none;", align = "center">Write the headline here.</h2>
+
+![asdjghasd](figures/executive_summary/executive_summary.png)
+* Figure 1: Some caption here *
+
+
+## Dataset Structure and Entity Relationship Diagram(ERD)
+
+dataset desc
+
+row count ...
+
+# <p align="center">Deep-dive Insights</p>
+## Sales trends
+<table>
+  <tr>
+    <td><img src="misc/placeholder.png" width="500"/></td>
+    <td><img src="misc/placeholder.png" width="500"/></td>
+  </tr>
+</table>
+## Product performance
+
+## 
+
+## 
+
+
+
+
+
+
+<details>
+<summary><b>Table of Contents (Click to expand)</b></summary>
+
+* [1. Introduction](#1-introduction)
+* [2. Getting Started](#2-getting-started)
+  * [2.1 Installation](#21-installation)
+  * [2.2 Configuration](#22-configuration)
+* [3. Advanced Usage](#3-advanced-usage)
+
+</details>
+## 1. Introduction
+This is the introduction section.
+
+## Frequently Asked Questions
+This is the FAQ section.
+
+
+<details>
+  <summary>Click to expand</summary>
+  #asdasdasdas
+  Your Markdown content or text goes here.
+
+</details>
+
+<details>
+  <summary>View Code Example</summary>
+
+  # This is a Heading
+  * Item one
+  * Item two
+
+  ```python
+  asdasdasd
+  ```
+
+</details>
+
+## Entity Relationship Diagram
+
+
+
+# <p align="center">Executive Summary</p>
