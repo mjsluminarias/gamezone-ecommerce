@@ -1,17 +1,16 @@
 <p align="center">
-  <img src="misc/gamezone_logo.png" alt="GameZone Logo">
+  <img src="misc/gamezone_logo_2.png" alt="GameZone Logo">
 </p>
 
 # <p align="center">Client Background</p>
 
 
 
-GameZone desc
+The Game Zone is an international Video Game Store specializing in new and pre-owned games, systems, and accessories from ALL generations throught the history of gaming. Apart from generation systems, The Game Zone also showcases a massive collection of retro games and consoles inculding many rare and hard-to-find titles.
 
-GameZone book
+The Game Zone's book of business is approaching N customers and possesses over N transactions, generating gross revenue somewhere $N million. The available eCommerce data spans various dimensions and metrics, including sales, products, marketing channels, and sales by regions.
 
-GameZone additional details
-
+Reporting to the Head of Sales and Operations, an in-depth analysis was conducted to evaluate The Game Zone's perfomance over the past several years(insert date). This comprehensize review provides valuable insights that internal cross-functional teams will utilize to streamline process and enhance The Game Zone's commercial performance. The key insights and recommendations focus on the following areas:
 
 
 ## Northstar Metrics
@@ -28,6 +27,13 @@ GameZone additional details
 ![asdjghasd](figures/executive_summary/executive_summary.png)
 * Figure 1: Some caption here *
 
+1. Revenue Growth and Peak Performance
+
+2. Trend
+
+3. Quarterly Insights and Seasonal Trends
+
+4. Key Takeaways and Recommendations
 
 ## Dataset Structure and Entity Relationship Diagram(ERD)
 
