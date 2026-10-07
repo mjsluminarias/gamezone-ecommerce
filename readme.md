@@ -28,13 +28,14 @@ Reporting to the Head of Sales and Operations, an in-depth analysis was conducte
 * Figure 1: Some caption here *
 
 1. Revenue Growth and Peak Performance
-
-2. Trend
+- 
+2. Declining Trend in 2021
 
 3. Quarterly Insights and Seasonal Trends
 
 4. Key Takeaways and Recommendations
-
+- Investigate the causes of the 2021 decline 
+- Leverage high-perfoming periods (Q3 and Q4) to refine marketing
 ## Dataset Structure and Entity Relationship Diagram(ERD)
 
 dataset desc
@@ -43,18 +44,16 @@ row count ...
 
 # <p align="center">Deep-dive Insights</p>
 ## Sales trends
-<table>
-  <tr>
-    <td><img src="misc/placeholder.png" width="500"/></td>
-    <td><img src="misc/placeholder.png" width="500"/></td>
-  </tr>
-</table>
+![asdjghasd](figures/sales/sales.png)
+
+### <p align="center">Sales Growth follows seasonal fluctuations, while AOV remains relatively constant, except for the Sales Growth in October 2022</p>
+![asdjghasd](figures/sales/sales_vs_aov.png)
+
 ## Product performance
 
 ## 
 
 ## 
-
 
 
 
@@ -101,4 +100,9 @@ This is the FAQ section.
 
 
 
-# <p align="center">Executive Summary</p>
+# <p align="center">Refunds</p>
+
+![asdjghasd](figures/refunds/lost_revenue_strea,.png)
+
+
+![asdjghasd](figures/refunds/lost_revenue_orders.png)
