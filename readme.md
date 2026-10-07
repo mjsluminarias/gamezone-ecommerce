@@ -46,10 +46,13 @@ row count ...
 ## Sales trends
 ![asdjghasd](figures/sales/sales.png)
 
-### <p align="center">Sales Growth follows seasonal fluctuations, while AOV remains relatively constant, except for the Sales Growth in October 2022</p>
+### <p align="center">show fluctuations</p>
 ![asdjghasd](figures/sales/sales_vs_aov.png)
 
 ## Product performance
+![asdjghasd](figures/product_performance/product_performance.png)
+
+![asdjghasd](figures/product_performance/product_performance_orders.png)
 
 ## 
 
@@ -83,19 +86,6 @@ This is the FAQ section.
 
 </details>
 
-<details>
-  <summary>View Code Example</summary>
-
-  # This is a Heading
-  * Item one
-  * Item two
-
-  ```python
-  asdasdasd
-  ```
-
-</details>
-
 ## Entity Relationship Diagram
 
 
@@ -106,3 +96,20 @@ This is the FAQ section.
 
 
 ![asdjghasd](figures/refunds/lost_revenue_orders.png)
+
+# <p align="center">Recommendations</p>
+
+# <p align="center">Appendix</p>
+
+<details>
+  <summary>Python Visualization</summary>
+
+  # This is a Heading
+  * Item one
+  * Item two
+
+  ```python
+  asdasdasd
+  ```
+
+</details>
