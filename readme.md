@@ -1,16 +1,14 @@
 <p align="center">
-  <img src="misc/gamezone_logo_2.png" alt="GameZone Logo">
+  <img width="420px" src="misc/gamezone_logo_2.png" alt="GameZone Logo">
 </p>
 
 # <p align="center">Client Background</p>
 
+The Game Zone is an international video game store specializing in new and pre-owned games, systems, and accessories from ALL generations throught the history of gaming. Apart from generation systems such as retro games and consoles that includes hard-to-find titles, The Game Zone also showcases a massive collection of modern-day computer electronics.
 
+The Game Zone's book of business in online consumer electronics is approaching 30,000 customers and possesses over 50,000 transactions, generating gross revenue of near $5 million. The available eCommerce data spans various dimensions and metrics, including sales, products, and marketing channels.
 
-The Game Zone is an international Video Game Store specializing in new and pre-owned games, systems, and accessories from ALL generations throught the history of gaming. Apart from generation systems, The Game Zone also showcases a massive collection of retro games and consoles inculding many rare and hard-to-find titles.
-
-The Game Zone's book of business is approaching N customers and possesses over N transactions, generating gross revenue somewhere $N million. The available eCommerce data spans various dimensions and metrics, including sales, products, marketing channels, and sales by regions.
-
-Reporting to the Head of Sales and Operations, an in-depth analysis was conducted to evaluate The Game Zone's perfomance over the past several years(insert date). This comprehensize review provides valuable insights that internal cross-functional teams will utilize to streamline process and enhance The Game Zone's commercial performance. The key insights and recommendations focus on the following areas:
+Reporting to the head of Sales and Operations, an in-depth analysis was conducted to evaluate The Game Zone's perfomance from 2019 to early 2021. This comprehensize review provides valuable insights that internal cross-functional teams will utilize to streamline process and enhance The Game Zone's commercial performance. The key insights and recommendations focus on the following areas:
 
 
 ## Northstar Metrics
@@ -21,21 +19,57 @@ Reporting to the Head of Sales and Operations, an in-depth analysis was conducte
 
 #
 
-# <p align="center">Executive Summary</p>
-<h2 style="border-bottom: none;", align = "center">Write the headline here.</h2>
+<table align="center">
+  <tr>
+    <div width="920">
+      <h1 align="center">Executive Summary</h1>
+      <div align="center">
+        <img width="1000" alt="Sales revenue graph from 2019 to Early 2021" src="figures/executive_summary/executive_summary.png" />
+      </div>
+      <td width="460" valign="top">
+        <ol>
+          <li>
+            <strong>Revenue Growth and Peak Performance:</strong>
+            <ul>
+              <li>2020 was the strongest year, with sales growing each quarter as a result of the higher order frequency.</li>
+              <li>Q4 2020 saw the highest revenue $400k in December 2020, making it the best-performing month.</li>
+              <li>April 2020 ($300k) and September 2020 ($320k) also maintained strong sales, though a minor downward trend started afterward.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Declining Trend in Q1 2020</strong>
+            <ul>
+              <li> A sales anomaly and a significant downward trend occurred in January 2020 ($94k), due to the extreme lack of transactions at first two-thirds of the month.</li>
+              <li>The Q1 revenue decline suggests a major downturn, likely caused by external market conditions, reduced consumer demand, or internal operational shifts.</li>
+            </ul>
+          </li>
+        </ol>
+      </td>
+      <td width="460" valign="top">
+        <ol start="3">
+          <li>
+            <strong>Quarterly Insights & Seasonal Trends</strong>
+            <ul>
+              <li>Q3 and Q4 of each year typically show strong performance, likely due to seasonal shopping trends and marketing efforts.</li>
+              <li>Revenue quickly dropped every Q1, signaling an overall weak performance compared to the other quarters.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Key Takeaways & Recommendations</strong>
+            <ul>
+              <li>Investigate the causes of the January 2020 which causes the decline (e.g., market changes, competition, internal factors).</li>
+              <li>Leverage high-performing periods (e.g., December 2020 and Septermber 2020) to refine marketing and sales strategies.</li>
+              <li>Reassess business strategy for the upcoming year, focusing on promotions, pricing, and customer engagement to regain momentum.</li>
+            </ul>
+          </li>
+        </ol>
+      </td>
+    </div>
+  </tr>
+</table>
 
-![asdjghasd](figures/executive_summary/executive_summary.png)
-* Figure 1: Some caption here *
 
-1. Revenue Growth and Peak Performance
-- 
-2. Declining Trend in 2021
 
-3. Quarterly Insights and Seasonal Trends
-
-4. Key Takeaways and Recommendations
-- Investigate the causes of the 2021 decline 
-- Leverage high-perfoming periods (Q3 and Q4) to refine marketing
 ## Dataset Structure and Entity Relationship Diagram(ERD)
 
 dataset desc
