@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="420px" src="misc/gamezone_logo_2.png" alt="GameZone Logo">
+  <img width="280px" src="misc/gamezone_logo_3.png" alt="GameZone Logo">
 </p>
 
 # <p align="center">Client Background</p>
@@ -12,10 +12,9 @@ Reporting to the head of Sales and Operations, an in-depth analysis was conducte
 
 
 ## Northstar Metrics
-- [Sales trends](#sales-trends) - focusing on key metrics of sales revenue, number of orders placed, and average order value
-- [Product performance](#product-performance)  - Analyzing different product lines, market impact, and refund rates to inform strategic product decisions
-- [Platform](#) - 
-- [Marketing Channel](#) - 
+- [Sales trends](#sales_trends): focusing on key metrics of sales revenue, number of orders placed, and average order value
+- [Product performance](#product_performance): analyzing different product lines, market impact, and refund rates to inform strategic product decisions
+- [Marketing channels](#marketing_channel): investigating the main driver of revenue through different channels
 
 #
 
