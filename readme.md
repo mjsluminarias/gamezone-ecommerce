@@ -15,7 +15,7 @@ Reporting to the head of Sales and Operations, an in-depth analysis was conducte
 - [Sales trends](#sales_trends): focusing on key metrics of sales revenue, number of orders placed, and average order value
 - [Product performance](#product_performance): analyzing different product lines, market impact, and refund rates to inform strategic product decisions
 - [Marketing channels](#marketing_channel): investigating the main driver of revenue through different channels
-
+- [Customer acquisition](#customer_acquisition):
 #
 
 <table align="center">
