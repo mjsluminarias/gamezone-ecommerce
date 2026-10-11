@@ -31,15 +31,15 @@ Reporting to the head of Sales and Operations, an in-depth analysis was conducte
             <strong>Revenue Growth and Peak Performance:</strong>
             <ul>
               <li>2020 was the strongest year, with sales growing each quarter as a result of the higher order frequency.</li>
-              <li>Q4 2020 saw the highest revenue $400k in December 2020, making it the best-performing month.</li>
+              <li>Q4 2020 saw the highest revenue $410k in December 2020, making it the best-performing month.</li>
               <li>April 2020 ($300k) and September 2020 ($320k) also maintained strong sales, though a minor downward trend started afterward.</li>
             </ul>
           </li>
           <li>
             <strong>Declining Trend in Q1 2020</strong>
             <ul>
-              <li> A sales anomaly and a significant downward trend occurred in January 2020 ($94k), due to the extreme lack of transactions at first two-thirds of the month.</li>
-              <li>The Q1 revenue decline suggests a major downturn, likely caused by external market conditions, reduced consumer demand, or internal operational shifts.</li>
+              <li> A significant downward trend occurred in January 2020 ($94k), the operational pause at first two-thirds of the month led to extreme lack of completed transactions.</li>
+              <li>The Q1 revenue decline suggests a major downturn caused internal operational shifts.</li>
             </ul>
           </li>
         </ol>
@@ -69,6 +69,7 @@ Reporting to the head of Sales and Operations, an in-depth analysis was conducte
 
 
 
+
 ## Dataset Structure and Entity Relationship Diagram(ERD)
 
 dataset desc
@@ -79,8 +80,65 @@ row count ...
 ## Sales trends
 ![asdjghasd](figures/sales/sales.png)
 
+<table>
+  <tr>
+    <td>
+      <strong>Sales Revenue</strong>
+      <ol>
+        <li>Sharp Decline in Q4 2022 – A Major Sales Anomaly <ul>
+            <li>Historically, Q4 (Oct-Dec) has been the strongest quarter due to holiday shopping (Black Friday, Cyber Monday, Christmas sales). However, in 2022, <strong>Q4 sales plummeted</strong>. </li>
+            <li>December 2022 Sales Revenue was $262K (Previous years: $458K–$1.25M). This represents a <strong>~70-80% drop</strong> from Q4 2021 and an even sharper decline compared to Q4 2020. </li>
+          </ul>
+        </li>
+        <li>Declining Growth Throughout 2022 – Indicating Weak Consumer Demand <ul>
+            <li>Each quarter in 2022 experienced a downward trend.</li>
+            <li>Q1: Started fairly strong ($704K in Jan) but lower than 2021.</li>
+            <li>Q2 - Q3: Dropped further, below $500K per month and continued decline through Q3 with Aug/Sep below $400K.</li>
+            <li>Q4: <strong>Historic low, indicating critical demand issues</strong>. This suggests customer retention, pricing, or product-market fit issues. TechSphere may need to re-strategize through marketing, promotions, or change in pricing. </li>
+          </ul>
+        </li>
+      </ol>
+      <strong>Average Order Value</strong>
+      <ol>
+        <li> Sharp AOV Surge in 2020, followed by a Decline in early 2021 <ul>
+            <li>
+              <strong>2020 saw the highest AOV growth, peaking at $322 (Oct 2020)</strong> compared to $246 (Nov 2019), aligning with pandemic-driven eCommerce boom.
+            </li>
+            <li>Post-pandemic correction (2021-2022) led to a steady decline, with AOV in 2022 returning close to 2019 levels (~$234-$237).</li>
+          </ul>
+        </li>
+        <li>2022 AOV is lower and relatively more volatile compared to previous years <ul>
+            <li>
+              <strong>2022 AOV fluctuates significantly </strong> between $216 (Oct) and $256 (Sep).
+            </li>
+            <li>Q4 2022 AOV is significantly lower than Q4 2020 & 2021, meaning holiday spending per order has dropped.</li>
+          </ul>
+        </li>
+        <li>Long-Term AOV Decline May Indicate Price Sensitivity <ul>
+            <li>From a peak of ~$322 in 2020, AOV steadily dropped to ~$234 in 2022 which is 27% drop.</li>
+            <li>Over the span of four years, the change in AOV growth has been relatively constant, indicating minimal changes in product pricing (as illustrated in Sales Growth vs. AOV Growth below).</li>
+            <li>AOV in 2022 is likely not a major factor in the decline of sales that year.</li>
+          </ul>
+        </li>
+      </ol>
+      <strong>Order Count</strong>
+      <ol>
+        <li>Order counts closely follow sales revenue, indicating that the decline in revenue is primarily due to <strong>fewer orders</strong> rather than a drop in AOV in 2022. </li>
+        <li>Total orders <strong>dropped by 38%</strong> from 2021 to 2022. </li>
+        <li>The sales anamoly and decline <strong>started in mid-2022</strong>, with orders falling from 2,034 in July to just 825 in October. </li>
+        <li>While people are spending slightly less per order, the <strong>decline in order frequency</strong> directly results in lower sales revenue. </li>
+      </ol>
+    </td>
+  </tr>
+</table>
+
+[dashboard](https://app.powerbi.com/links/wZegzjhRym?ctid=e93c0c9e-286e-4c79-b4cd-be2a9d8ccf16&pbi_source=linkShare)
+
+customer is spending more per transaction, but the total number of transactions per paying customer has dropped
 ### <p align="center">show fluctuations</p>
 ![asdjghasd](figures/sales/sales_vs_aov.png)
+
+
 
 ## Product performance
 ![asdjghasd](figures/product_performance/product_performance.png)
