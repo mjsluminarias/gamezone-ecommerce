@@ -70,7 +70,7 @@ Reporting to the head of Sales and Operations, an in-depth analysis was conducte
 
 The database structure as seen below consists of four tables: orders, customers and products merged into a one big table (OBT) with a total row count of 21859 records. 
 
-<div align = center> <img width = 1000px alt = "ERD" src = "misc/placeholder.jpg"/> </div>
+<div align = center> <img width = 1000px alt = "ERD" src = "misc/erd.png"/> </div>
 
 # <p align="center">Deep-dive Insights</p>
 ## Sales trends
