@@ -15,7 +15,6 @@ Reporting to the head of Sales and Operations, an in-depth analysis was conducte
 - [Sales trends](#sales_trends): focusing on key metrics of sales revenue, number of orders placed, and average order value
 - [Product performance](#product_performance): analyzing different product lines, market impact, and refund rates to inform strategic product decisions
 - [Marketing channels](#marketing_channel): investigating the main driver of revenue through different channels
-- [Customer acquisition](#customer_acquisition):
 #
 
 <table align="center">
@@ -67,14 +66,11 @@ Reporting to the head of Sales and Operations, an in-depth analysis was conducte
   </tr>
 </table>
 
-
-
-
 ## Dataset Structure and Entity Relationship Diagram(ERD)
 
-dataset desc
+The database structure as seen below consists of four tables: orders, customers and products merged into a one big table (OBT) with a total row count of 21859 records. 
 
-row count ...
+<div align = center> <img width = 1000px alt = "ERD" src = "misc/placeholder.jpg"/> </div>
 
 # <p align="center">Deep-dive Insights</p>
 ## Sales trends
@@ -188,19 +184,239 @@ This is the FAQ section.
 
 ![asdjghasd](figures/refunds/lost_revenue_orders.png)
 
-# <p align="center">Recommendations</p>
+<table align="center">
+    <h1>Recommendations</h1>
+    <h4>Based on the uncovered insights, here are actionable items that The Game Zone can take away from our analysis.</h4>
+      <ul>
+        <h3>Sales</h3>
+        <li>Remedy sales dip due to seasonal fluctuations and operational pause.</li>
+        <ul>
+          <li>increase marketing campaigns during Q1.</li>
+          <li>reduce downtime as it greatly affected sales</li>
+        </ul>
+        <li>Seek new customers</li>
+          <ul><li>reason 1</li>
+          <li>reason 2</li></ul>
+        <h3>Products</h3>
+        <li>Optimize inventory for high-performing products year-round.</li>
+          <ul><li>The 27-Inch 4K Gaming Monitor is the strongest product in terms of sales, approaching (insert) over 2019 to early 2021.</li>
+          <li>The (insert product) are also a strong-selling product, with close to (insert sales) in sales over (insert time).</li></ul>
+        <li>Deprioritize inventory for low-performing products.</li>
+          <ul><li>(insert products) for nearly 0% of total purchase orders.</li></ul>
+        <li>Investigate sales for MacBook Air laptops.</li>
+          <ul><li>MacBook Air Laptops rank third in sales revenue (22%) but fall in the bottom half for number of purchase orders (3.67%).</li></ul>
+        <h3>Refund Rates</h3>
+        <li>Streamline product quality control for for high AOV products as as they are the most frequently returned products.</li>
+          <ul><li>Macbook Air Laptops had an average return rate of 14% from 2019 to 2021.</li>
+          <li>Thinkpad Laptops also had an average return rate of 14% from 2019 to 2021.</li></ul>
+        <h3>Marketing Channels</h3>
+        <li>asdasd</li>
+          <ul><li></li></ul>
+</table>
 
-# <p align="center">Appendix</p>
+
+<h1>Appendices</h1>
+  <h4>Written below are the Python (Jupyter notebook) data cleaning, generating aggregations, and data visualization. If the tables already exist is within the database, the counterpart SQL queries were also written.</h4>
+  
+  <ul>
+  <h3>Data Cleaning and Aggregation</h3>
+  <details>
+    <summary>Python</summary>
+
+```python
+import pandas as pd
+import re
+import numpy as np
+
+df = pd.read_csv("../datasets/orders.csv").copy()
+
+df.head(5)
+
+# ====================================================================
+# STEP 1: HEADER CLEANING
+# ====================================================================
+print(df.columns.tolist())
+df.columns = df.columns.str.strip().str.lower().str.replace(" ", "_")
+print("headers successfully cleaned")
+print(df.columns.tolist())
+
+# ====================================================================
+# STEP 2: TYPE COVERSION & CURRENCY CLEANING
+# ====================================================================
+# columns: unit_price_usd, shipping_cost_usd
+
+unit_price_usd_mask = df["usd_price"].astype(str).str.contains(r"\$")
+print(df.loc[unit_price_usd_mask, ["order_id", "usd_price"]].head(3))
+
+# ====================================================================
+# STEP 3: DATE PARSING
+# ====================================================================
+# columns: purchase_ts, ship_ts
+
+print(df["purchase_ts"].dtype)
+print(df["ship_ts"].dtype)
+
+df["purchase_ts"] = pd.to_datetime(df["purchase_ts"], format ="mixed", errors = "coerce")
+df["ship_ts"] = pd.to_datetime(df["ship_ts"], format ="mixed", errors = "coerce")
+
+
+# the nice to have--s
+df["purchase_y"] = df["purchase_ts"].dt.to_period("Y")
+df["purchase_ym"] = df["purchase_ts"].dt.to_period("M")
+df["purchase_ymd"] = df["purchase_ts"].dt.to_period("D")
+df["purchase_ymw"] = df["purchase_ts"].dt.to_period("W")
+df["purchase_q"] = df["purchase_ts"].dt.to_period("Q")
+
+# df = df.drop(columns=["purchase_year", "purchase_year_month", "purchase_year_month_week", "purchase_quarter"])
+
+df["ship_y"] = df["ship_ts"].dt.to_period("Y")
+df["ship_ym"] = df["ship_ts"].dt.to_period("M")
+df["ship_ymd"] = df["ship_ts"].dt.to_period("D")
+df["ship_ymw"] = df["ship_ts"].dt.to_period("W")
+df["ship_q"] = df["ship_ts"].dt.to_period("Q")
+
+
+df["purchase_platform"] = df["purchase_platform"].str.lower()
+df["purchase_platform"].unique()
+
+df["marketing_channel"] = df["marketing_channel"].str.lower()
+df["marketing_channel"].unique()
+
+df['marketing_channel'] = df['marketing_channel'].replace({np.nan: "organic", "uknown": "organic"})
+
+
+df = df[~df["purchase_ts"].isna()]
+
+df["account_creation_method"].unique()
+
+df["product_name"].unique()
+
+df["product_name"] = df["product_name"].replace("27inches 4k gaming monitor", "27in 4K gaming monitor")
+
+
+# ====================================================================
+# FINAL STEP: EXPORTING THE NEWLY CLEANED DATA
+# ====================================================================
+df.to_csv("../datasets/sales_data_cln.csv", index=False)
+```
+</details>
+
 
 <details>
-  <summary>Python Visualization</summary>
+  <summary>SQL</summary>
+  
+  ```sql
+-- combining all the necessary elements
 
-  # This is a Heading
-  * Item one
-  * Item two
+
+-- create timestamp parser function; returns null if empty or unparsable
+CREATE OR REPLACE FUNCTION try_to_timestamp(val TEXT)
+RETURNS TIMESTAMP AS $$
+BEGIN
+    RETURN NULLIF(TRIM(val), '')::TIMESTAMP;
+EXCEPTION WHEN OTHERS THEN
+    RETURN NULL; 
+END;
+$$ LANGUAGE plpgsql IMMUTABLE;
+
+-- create function to standardize currencies in usd; similar to prior function it returns null if empty or unparsable
+CREATE OR REPLACE FUNCTION try_to_numeric(val TEXT)
+RETURNS NUMERIC AS $$
+BEGIN
+    RETURN NULLIF(REGEXP_REPLACE(val, '[$,\s]', '', 'g'), '')::NUMERIC;
+EXCEPTION WHEN OTHERS THEN
+    RETURN NULL;
+END;
+$$ LANGUAGE plpgsql IMMUTABLE;
+
+
+-- cleaning proper
+DROP TABLE IF EXISTS sales_data_cln;
+CREATE TABLE sales_data_cln AS
+WITH parsed AS (
+    SELECT
+        order_id,
+        try_to_numeric(usd_price)         AS usd_price,
+        try_to_numeric(shipping_cost_usd) AS shipping_cost_usd,
+        try_to_timestamp(purchase_ts)     AS purchase_ts,
+        try_to_timestamp(ship_ts)         AS ship_ts,
+        LOWER(purchase_platform)          AS purchase_platform,
+        -- lower first, then fill NULL / typo -> 'organic' (same order as pandas)
+        CASE
+            WHEN marketing_channel IS NULL
+              OR LOWER(marketing_channel) = 'uknown' THEN 'organic'
+            ELSE LOWER(marketing_channel)
+        END                               AS marketing_channel,
+        account_creation_method,
+        CASE
+            WHEN product_name = '27inches 4k gaming monitor'
+                THEN '27in 4K gaming monitor'
+            ELSE product_name
+        END                               AS product_name
+    FROM stg_orders
+)
+SELECT
+    *,
+    DATE_TRUNC('year',    purchase_ts)::DATE AS purchase_y,
+    DATE_TRUNC('month',   purchase_ts)::DATE AS purchase_ym,
+    DATE_TRUNC('day',     purchase_ts)::DATE AS purchase_ymd,
+    DATE_TRUNC('week',    purchase_ts)::DATE AS purchase_ymw,
+    DATE_TRUNC('quarter', purchase_ts)::DATE AS purchase_q,
+    DATE_TRUNC('year',    ship_ts)::DATE     AS ship_y,
+    DATE_TRUNC('month',   ship_ts)::DATE     AS ship_ym,
+    DATE_TRUNC('day',     ship_ts)::DATE     AS ship_ymd,
+    DATE_TRUNC('week',    ship_ts)::DATE     AS ship_ymw,
+    DATE_TRUNC('quarter', ship_ts)::DATE     AS ship_q
+FROM parsed
+WHERE purchase_ts IS NOT NULL;
+
+
+-- sanity check; this query might be costly due to using distinct
+SELECT DISTINCT purchase_platform      FROM sales_data_cln;
+SELECT DISTINCT marketing_channel      FROM sales_data_cln;
+SELECT DISTINCT account_creation_method FROM sales_data_cln;
+SELECT DISTINCT product_name           FROM sales_data_cln;
+
+-- hence, here are the CTE alternative for identifying unique entries per column
+
+  ```
+</details>
+
+
+
+<details>
+  <summary>Click here to explore the Python (Jupyter Notebook) codes used</summary>
 
   ```python
-  asdasdasd
+import os
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib.dates as mdates
+from datetime import datetime
   ```
 
+</details>
+
+<details>
+  <summary>Alternatively, the SQL query for extrapolatory data analysis</summary>
+</details>
+
+
+<details>
+  <summary>Click here to explore the Python (Jupyter Notebook) codes used</summary>
+
+  ```python
+import os
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib.dates as mdates
+from datetime import datetime
+  ```
+
+</details>
+
+<details>
+  <summary>Alternatively, the SQL query for extrapolatory data analysis</summary>
 </details>
