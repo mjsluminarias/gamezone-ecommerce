@@ -383,40 +383,32 @@ SELECT DISTINCT product_name           FROM sales_data_cln;
 </details>
 
 
+<h3>Executive Summary and Sales</h3>
 
-<details>
-  <summary>Click here to explore the Python (Jupyter Notebook) codes used</summary>
-
-  ```python
-import os
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import matplotlib.dates as mdates
-from datetime import datetime
-  ```
+<details> <summary>Python</summary>
 
 </details>
 
-<details>
-  <summary>Alternatively, the SQL query for extrapolatory data analysis</summary>
-</details>
-
-
-<details>
-  <summary>Click here to explore the Python (Jupyter Notebook) codes used</summary>
-
-  ```python
-import os
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import matplotlib.dates as mdates
-from datetime import datetime
-  ```
+<details> <summary>SQL</summary>
 
 </details>
 
-<details>
-  <summary>Alternatively, the SQL query for extrapolatory data analysis</summary>
+<h3>Product Performance</h3>
+
+<details> <summary>Python</summary>
+
+</details>
+
+<details> <summary>SQL</summary>
+
+</details>
+
+<h3>Marketing Channel</h3>
+
+<details> <summary>Python</summary>
+
+</details>
+
+<details> <summary>SQL</summary>
+
 </details>
