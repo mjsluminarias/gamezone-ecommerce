@@ -187,10 +187,6 @@ This is the FAQ section.
 # <p align="center">Refunds</p>
 
 ![asdjghasd](figures/refunds/lost_revenue_strea,.png)
-
-
-![asdjghasd](figures/refunds/lost_revenue_orders.png)
-
 ![asdjghasd](figures/refunds/refund_rates_heatmap.png)
 
 <table align="center">
