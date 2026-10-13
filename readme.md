@@ -191,6 +191,8 @@ This is the FAQ section.
 
 ![asdjghasd](figures/refunds/lost_revenue_orders.png)
 
+![asdjghasd](figures/refunds/refund_rates_heatmap.png)
+
 <table align="center">
     <h1>Recommendations</h1>
     <h4>Based on the uncovered insights, here are actionable items that The Game Zone can take away from our analysis.</h4>
