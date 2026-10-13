@@ -72,25 +72,34 @@ The database structure as seen below consists of four tables: orders, customers 
 
 <div align = center> <img width = 1000px alt = "ERD" src = "misc/erd.png"/> </div>
 
+#
 # <p align="center">Deep-dive Insights</p>
-## Sales trends
+# Sales trends
 ![asdjghasd](figures/sales/sales.png)
-
 <table>
   <tr>
     <td>
       <strong>Sales Revenue</strong>
       <ol>
-        <li>Sharp Decline in Q4 2022 – A Major Sales Anomaly <ul>
-            <li>Historically, Q4 (Oct-Dec) has been the strongest quarter due to holiday shopping (Black Friday, Cyber Monday, Christmas sales). However, in 2022, <strong>Q4 sales plummeted</strong>. </li>
-            <li>December 2022 Sales Revenue was $262K (Previous years: $458K–$1.25M). This represents a <strong>~70-80% drop</strong> from Q4 2021 and an even sharper decline compared to Q4 2020. </li>
+        <li>Sharp Decline in the October 2020 – Indicating a Sales Anomaly
+          <ul>
+            <li>Historically, Q4 (Oct-Dec) has been the strongest quarter due to holiday shopping (Black Friday, Cyber Monday, Christmas sales). However, there is a sales plummet in October 2020 sales due to the low number of completed orders. </li>
+            <li>December 2020 Sales Revenue was $410K (Previous years: $160K). While this </li>
           </ul>
         </li>
-        <li>Declining Growth Throughout 2022 – Indicating Weak Consumer Demand <ul>
-            <li>Each quarter in 2022 experienced a downward trend.</li>
-            <li>Q1: Started fairly strong ($704K in Jan) but lower than 2021.</li>
-            <li>Q2 - Q3: Dropped further, below $500K per month and continued decline through Q3 with Aug/Sep below $400K.</li>
-            <li>Q4: <strong>Historic low, indicating critical demand issues</strong>. This suggests customer retention, pricing, or product-market fit issues. TechSphere may need to re-strategize through marketing, promotions, or change in pricing. </li>
+        <li>Recurring Decline in October and January – Indicating Weak Consumer Demand
+        <ul>
+            <li></li>
+        </ul>
+        </li>
+        <li>Growth Plateau in Q2 to early Q3
+          <ul>
+            <li></li>
+          </ul>
+        </li>
+        <li>Peak Sales Revenue in 2019 is bought by higher demand on low end products
+          <ul>
+            <li>It is important to note that </li>
           </ul>
         </li>
       </ol>
@@ -98,9 +107,8 @@ The database structure as seen below consists of four tables: orders, customers 
       <ol>
         <li> Sharp AOV Surge in 2020, followed by a Decline in early 2021 <ul>
             <li>
-              <strong>2020 saw the highest AOV growth, peaking at $322 (Oct 2020)</strong> compared to $246 (Nov 2019), aligning with pandemic-driven eCommerce boom.
+              <strong>2020 saw the highest AOV growth, peaking at $335 per order (Dec 2020)</strong> compared to preceeding year's highest $243 per order (Feb 2019), indicating customers bought higher end products.
             </li>
-            <li>Post-pandemic correction (2021-2022) led to a steady decline, with AOV in 2022 returning close to 2019 levels (~$234-$237).</li>
           </ul>
         </li>
         <li>2022 AOV is lower and relatively more volatile compared to previous years <ul>
@@ -137,9 +145,8 @@ customer is spending more per transaction, but the total number of transactions 
 
 
 ## Product performance
-![asdjghasd](figures/product_performance/product_performance.png)
+![asdjghasd](figures/product_performance/products.png)
 
-![asdjghasd](figures/product_performance/product_performance_orders.png)
 
 ## 
 
