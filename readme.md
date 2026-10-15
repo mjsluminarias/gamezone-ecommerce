@@ -76,6 +76,7 @@ The database structure as seen below consists of four tables: orders, customers 
 # <p align="center">Deep-dive Insights</p>
 # Sales trends
 ![asdjghasd](figures/sales/sales.png)
+> Note: Green markers indicate the top 3, while red markers indicate the bottom 3.
 <table>
   <tr>
     <td>
@@ -188,7 +189,7 @@ This is the FAQ section.
 
 ![asdjghasd](figures/refunds/lost_revenue_strea,.png)
 ![asdjghasd](figures/refunds/refund_rates_heatmap.png)
-
+> Note: Cells filled with the background color are products with zero orders.
 <table align="center">
     <h1>Recommendations</h1>
     <h4>Based on the uncovered insights, here are actionable items that The Game Zone can take away from our analysis.</h4>
@@ -222,7 +223,25 @@ This is the FAQ section.
 
 <h1>Appendices</h1>
   <h4>Written below are the Python (Jupyter notebook) data cleaning, generating aggregations, and data visualization. If the tables already exist is within the database, the counterpart SQL queries were also written.</h4>
+  <ul>
+  <details>
+  <summary>Average Item Value as of Jan 2019 to Feb 2021</summary>
   
+  | Product | Average Item Value (in USD) | 
+  | :------- | :------- | 
+  | Sony PlayStation 5 Bundle  | 1626.66 | 
+  | Lenovo IdeaPad Gaming 3  | 1099.41  | 
+  | Acer Nitro V Gaming Laptop | 754.73 |
+  | 27in 4K gaming monitor | 416.8 |
+  | Nintendo Switch | 159.71 |
+  | Razer Pro Gaming Headset | 126.32 |
+  | Dell Gaming Mouse | 51.03 |
+  | JBL Quantum 100 Gaming Headset | 22.40 |
+
+  </details>
+  
+  </ul>
+
   <ul>
   <h3>Data Cleaning and Aggregation</h3>
   <details>
