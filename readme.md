@@ -29,16 +29,14 @@ Reporting to the head of Sales and Operations, an in-depth analysis was conducte
           <li>
             <strong>Revenue Growth and Peak Performance:</strong>
             <ul>
-              <li>2020 was the strongest year, with sales growing each quarter as a result of the higher order frequency.</li>
-              <li>Q4 2020 saw the highest revenue $410k in December 2020, making it the best-performing month.</li>
-              <li>April 2020 ($300k) and September 2020 ($320k) also maintained strong sales, though a minor downward trend started afterward.</li>
+              <li>2020 was the strongest year, with sales growing each quarter as a result of more completed orders and customers buying higher end products.</li>
+              <li>Q4 2020 was the highest-revenue quarter, peaking at $410k in December 2020, making it the best-performing month. However, the return rates of the top two most profitable products rose to 50%, indicating a significant revenue reversal that could have been prevented by more thorough operational procedures (such as product maintenance and quality control).</li>
             </ul>
           </li>
           <li>
-            <strong>Declining Trend in Q1 2020</strong>
+            <strong>Operational Pause in Jan 2020</strong>
             <ul>
-              <li> A significant downward trend occurred in January 2020 ($94k), the operational pause at first two-thirds of the month led to extreme lack of completed transactions.</li>
-              <li>The Q1 revenue decline suggests a major downturn caused internal operational shifts.</li>
+              <li>A downward trend occurred in January 2020 ($94k), caused by an operational pause during the first 19 days of the month. Despite the extreme lack of completed transactions, customers began to lean toward more expensive products, leading to significant sales growth in the following months.</li>
             </ul>
           </li>
         </ol>
@@ -48,16 +46,17 @@ Reporting to the head of Sales and Operations, an in-depth analysis was conducte
           <li>
             <strong>Quarterly Insights & Seasonal Trends</strong>
             <ul>
-              <li>Q3 and Q4 of each year typically show strong performance, likely due to seasonal shopping trends and marketing efforts.</li>
-              <li>Revenue quickly dropped every Q1, signaling an overall weak performance compared to the other quarters.</li>
+              <li>Q3 and Q4 of each year typically show strong performance in terms of sales revenue, likely due to seasonal shopping trends and marketing efforts.</li>
+              <li>Revenue dropped quickly every Q1, signaling weaker performance compared to the other quarters.</li>
+              <li>AOV and sales revenue plateaued during Q2, indicating a lack of marketing or ineffective marketing enforcement.</li>
             </ul>
           </li>
           <li>
             <strong>Key Takeaways & Recommendations</strong>
             <ul>
-              <li>Investigate the causes of the January 2020 which causes the decline (e.g., market changes, competition, internal factors).</li>
+              <li>Further investigate the causes of the seasonal Q1 decline (e.g., market changes, competition, internal factors).</li>
               <li>Leverage high-performing periods (e.g., December 2020 and Septermber 2020) to refine marketing and sales strategies.</li>
-              <li>Reassess business strategy for the upcoming year, focusing on promotions, pricing, and customer engagement to regain momentum.</li>
+              <li>Reassess business strategy for the upcoming year, focusing on marketing platforms, quality control, and customer engagement to regain momentum.</li>
             </ul>
           </li>
         </ol>
